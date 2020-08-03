@@ -1,10 +1,6 @@
-def create_matrices(size='3 3'):
-    row_size, col_size = [int(num) for num in size.split()]
-    matrix = []
-    for nmu in range(row_size):
-        add_row = [int(num) for num in str(input()).split()]  # User could enter different column length
-        matrix.append(add_row)
-    return matrix
+def create_matrices():
+    row_size, col_size = [int(num) for num in str(input()).split()]
+    return list([int(x) for x in str(input()).split()] for y in range(row_size))
 
 
 def check_matrices(matrix_A, matrix_B) -> bool:
@@ -49,7 +45,7 @@ def scalar_multiply(matrix_A, scalar):
 
 
 if __name__ == "__main__":
-    a = create_matrices(str(input()))
-    #b = create_matrices(str(input()))
-    #add_matrices(a, b)
+    a = create_matrices()
+    #b = create_matrices()
+    # add_matrices(a, b)
     scalar_multiply(a, int(input()))
