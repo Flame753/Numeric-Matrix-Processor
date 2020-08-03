@@ -2,7 +2,7 @@ def create_matrices(size='3 3'):
     row_size, col_size = [int(num) for num in size.split()]
     matrix = []
     for nmu in range(row_size):
-        add_row = [int(num)for num in str(input()).split()]  # User could enter different column length
+        add_row = [int(num) for num in str(input()).split()]  # User could enter different column length
         matrix.append(add_row)
     return matrix
 
@@ -36,7 +36,20 @@ def add_matrices(matrix_A, matrix_B):
         display_matrix(matrix)
 
 
+def scalar_multiply(matrix_A, scalar):
+    matrix = []
+    new_row = []
+    for row in range(len(matrix_A)):
+        for col in range(len(matrix_A[0])):
+            num = matrix_A[row][col] * scalar
+            new_row.append(num)
+        matrix.append(new_row.copy())
+        new_row.clear()
+    display_matrix(matrix)
+
+
 if __name__ == "__main__":
     a = create_matrices(str(input()))
-    b = create_matrices(str(input()))
-    add_matrices(a, b)
+    #b = create_matrices(str(input()))
+    #add_matrices(a, b)
+    scalar_multiply(a, int(input()))

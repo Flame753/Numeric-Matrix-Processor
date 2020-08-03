@@ -67,6 +67,8 @@ topics:
   - title: Operations with matrices
     theory_id: 7296
   2:
+  - title: Immutability
+    theory_id: 7929
   - title: Computer programming
     theory_id: 8739
   - title: Intro to computational thinking
@@ -83,10 +85,18 @@ topics:
     theory_id: 5900
   - title: Arguments
     theory_id: 7248
+  - title: Operations with list
+    theory_id: 6031
+  - title: Identity testing
+    theory_id: 8077
   - title: Args
     theory_id: 8560
   - title: Functional decomposition
     theory_id: 9571
+  - title: Objects in Python
+    theory_id: 9262
+  - title: Default arguments
+    theory_id: 10295
   - title: Matrix Multiplication
     theory_id: 7372
   - title: PyCharm basics
