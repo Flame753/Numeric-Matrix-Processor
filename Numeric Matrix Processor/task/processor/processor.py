@@ -1,5 +1,6 @@
 def create_matrices():
     row_size, col_size = [int(num) for num in str(input()).split()]
+    # x: columns and y: rows
     return list([int(x) for x in str(input()).split()] for y in range(row_size))
 
 
