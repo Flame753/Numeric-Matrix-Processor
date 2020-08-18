@@ -388,8 +388,11 @@ files:
                     return False
                 else:
                     for actual, expected in zip(actual_line, expected_line):
-                        if abs(float(actual) - float(expected)) > 0.01:
-                            return False
+                        try:
+                            if abs(float(actual) - float(expected)) > 0.01:
+                                return False
+                        except ValueError:
+                            raise WrongAnswerException("Looks like your matrix contains not only numbers!")
             return True
 
         def check(self, reply: str, attach) -> CheckResult:
