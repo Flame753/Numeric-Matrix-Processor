@@ -260,12 +260,11 @@ class CalcTest(StageTest):
                         raise WrongAnswerException("Looks like your matrix contains not only numbers!")
         return True
 
-
-def check(self, reply: str, attach) -> CheckResult:
-    characters = set(string.ascii_lowercase)
-    actual = [line.split() for line in reply.splitlines() if line and characters.isdisjoint(line)]
-    expected = list(map(str.split, str(attach.answer).strip().split("\n")))
-    return CheckResult(self.is_equal_matrices(expected, actual), attach.feedback)
+    def check(self, reply: str, attach) -> CheckResult:
+        characters = set(string.ascii_lowercase)
+        actual = [line.split() for line in reply.splitlines() if line and characters.isdisjoint(line)]
+        expected = list(map(str.split, str(attach.answer).strip().split("\n")))
+        return CheckResult(self.is_equal_matrices(expected, actual), attach.feedback)
 
 
 if __name__ == '__main__':
