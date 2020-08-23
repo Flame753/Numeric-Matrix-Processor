@@ -38,16 +38,16 @@ topics:
     theory_id: 6025
   - title: Naming variables
     theory_id: 5885
-  - title: List
-    theory_id: 5979
-  - title: Indexes
-    theory_id: 6189
   - title: Taking input
     theory_id: 5913
   - title: Program with numbers
     theory_id: 5872
   - title: Comparisons
     theory_id: 5920
+  - title: List
+    theory_id: 5979
+  - title: Indexes
+    theory_id: 6189
   - title: If statement
     theory_id: 5953
   - title: Else statement
@@ -106,10 +106,10 @@ topics:
     theory_id: 3614
   - title: Quotes and multi-line strings
     theory_id: 5814
-  - title: Scopes
-    theory_id: 6322
   - title: String formatting
     theory_id: 6037
+  - title: Scopes
+    theory_id: 6322
   - title: Class
     theory_id: 6661
   - title: Class instances
