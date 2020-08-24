@@ -50,3 +50,4 @@ if __name__ == "__main__":
     #b = create_matrices()
     # add_matrices(a, b)
     scalar_multiply(a, int(input()))
+
